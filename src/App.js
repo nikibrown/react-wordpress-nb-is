@@ -1,5 +1,5 @@
 import React from "react";
-import "./app.css";
+import "./style.css";
 import Races from "./components/Races";
 
 function App() {
