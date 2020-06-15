@@ -9,7 +9,7 @@ export class RaceItems extends Component {
 	componentDidMount() {
 		const featured_media = this.props.race.featured_media;
 		axios
-			.get(`http://nikibrown.is/wp-json/wp/v2/media/${featured_media}`)
+			.get(`https://nikibrown.is/wp-json/wp/v2/media/${featured_media}`)
 			.then((res) =>
 				this.setState({
 					imgUrl: res.data.media_details.sizes.thumbnail.source_url,

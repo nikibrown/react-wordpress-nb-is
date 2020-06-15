@@ -9,7 +9,7 @@ export class Races extends Component {
 	};
 	componentDidMount() {
 		axios
-			.get("http://nikibrown.is/wp-json/wp/v2/racing")
+			.get("https://nikibrown.is/wp-json/wp/v2/racing")
 			.then((res) =>
 				this.setState({
 					races: res.data,
